@@ -26,7 +26,7 @@ dash==2.9.3
 dash-auth==2.0.0
 dash-bootstrap-components==1.4.1
 dash-core-components==2.0.0
-dash-extensions==1.0.3
+dash-extensions==1.0.4
 dash-html-components==2.0.0
 dash-table==5.0.0
 dataclass-wizard==0.22.2
