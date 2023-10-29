@@ -39,7 +39,7 @@ en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_
 et-xmlfile==1.1.0
 filelock==3.12.2
 Fiona==1.9.4.post1
-Flask==2.3.2
+Flask==2.2.5
 Flask-Caching==2.0.1
 Flask-SQLAlchemy==3.0.5
 flatbuffers==23.5.26
