@@ -54,7 +54,7 @@ google-pasta==0.2.0
 greenlet==2.0.2
 grpcio==1.57.0
 gunicorn==21.2.0
-h5py==3.9.0
+h5py==3.8.0
 huggingface-hub==0.16.4
 idna==3.4
 importlib-metadata==6.6.0
