@@ -129,9 +129,9 @@ dbc.Col(html.Div([html.Div(html.Img(src= img_data2,width='auto',height=30),style
         page_current= 0,
         page_size= 12     
     )]))],
-             xs=7, sm=6, md=6, lg=6, xl=6,align='start'),
+             xs=7, sm=7, md=7, lg=7, xl=7,align='start'),
         
-        dbc.Col(dcc.Graph(id='bar-chart1'),xs=6, sm=6, md=6, lg=6, xl=6,align="start")
+        dbc.Col(dcc.Graph(id='bar-chart1' ),xs=5, sm=5, md=5, lg=5, xl=5,align="start")
         
         
     ],justify="center",className="mt-0")
@@ -234,7 +234,7 @@ def update_graphs(data_rows, derived_virtual_selected_rows,col):
    # Création des données pour le graphique à barres
     fig=px.bar(sub_df, x='BARRAGES',y=col,barmode='group', color_discrete_sequence=px.colors.qualitative.Alphabet,
       ).update_layout(legend=dict(yanchor="top", y=0.9, xanchor="left", x=0.2),xaxis={'categoryorder': 'total ascending'},
-                    width=500, height=500)
+                    width=600, height=450)
                                                                  
     
     return fig
