@@ -106,7 +106,10 @@ dbc.Col(html.Div([html.Div(html.Img(src= img_data2,width='auto',height=30),style
     
     
     dbc.Row([ 
-        dbc.Col([
+         dbc.Col([
+            html.Div(dcc.Loading(id="loading-1",
+               type="default",
+        children=[
             dash_table.DataTable(
         id='my-table',
         
@@ -125,10 +128,10 @@ dbc.Col(html.Div([html.Div(html.Img(src= img_data2,width='auto',height=30),style
         page_action="native",
         page_current= 0,
         page_size= 12     
-    )],
-             xs=7, sm=7, md=7, lg=7, xl=7,align='start'),
+    )]))],
+             xs=7, sm=6, md=6, lg=6, xl=6,align='start'),
         
-        dbc.Col(dcc.Graph(id='bar-chart1'),xs=5, sm=5, md=5, lg=5, xl=5,align="start")
+        dbc.Col(dcc.Graph(id='bar-chart1'),xs=6, sm=6, md=6, lg=6, xl=6,align="start")
         
         
     ],justify="center",className="mt-0")
